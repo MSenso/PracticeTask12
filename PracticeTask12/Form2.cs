@@ -34,11 +34,11 @@ namespace PracticeTask12
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter) // Нажат энтер
             {
-                if (int.TryParse((sender as TextBox).Text, out Form1.size))
+                if (int.TryParse((sender as TextBox).Text, out Form1.size)) // Введено целое число
                 {
-                    if (Form1.size >= 1 && Form1.size <= 100)
+                    if (Form1.size >= 1 && Form1.size <= 100) // Размер от 1 до 100
                     {
                         this.Close();
                     }
